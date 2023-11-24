@@ -19,7 +19,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-yousefalm1-django-blog-wjepwoaceu.us2.codeanyapp.com',
-                 'codestar17-2c11434fb7a0.herokuapp.com', 'localhost']
+                 'codestar17-2c11434fb7a0.herokuapp.com', 'localhost', '8006-yousefalm1-django-blog-wjepwoaceu.us2.codeanyapp.com']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'django_summernote',
+    'crispy_forms',
     'blog',
 ]
 
@@ -45,6 +46,9 @@ SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
